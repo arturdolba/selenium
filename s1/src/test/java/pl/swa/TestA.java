@@ -31,15 +31,15 @@ public class TestA {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	//System.setProperty("webdriver.gecko.driver", "./vendor/geckodriver.exe");
-    //driver = new FirefoxDriver();
+	System.setProperty("webdriver.gecko.driver", "./vendor/geckodriver.exe");
+    driver = new FirefoxDriver();
 	//System.setProperty("webdriver.ie.driver", "./vendor/IEDriverServer.exe");
     //DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
     //ieCapabilities.setCapability("nativeEvents", true);
 	//driver = new InternetExplorerDriver(ieCapabilities);
 	  
-	System.setProperty("phantomjs.binary.path", "./vendor/phantomjs.exe");
-	driver = new PhantomJSDriver();
+//	System.setProperty("phantomjs.binary.path", "./vendor/phantomjs.exe");
+//	driver = new PhantomJSDriver();
 	baseUrl = "http://www.szukajwarchiwach.pl/";
 	//driver.manage().window().maximize();
     //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
